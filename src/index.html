@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alex Vance is a full-stack systems architect and web developer."
+    />
+    <title>Alex — Full-Stack Systems Architect & Web Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              palette: {
+                bg: "#122324",
+                card: "#2F3A32",
+                muted: "#545748",
+                gold: "#DB9F75",
+                rust: "#804012",
+                cocoa: "#3E2411",
+              },
+            },
+            fontFamily: {
+              serif: ["Newsreader", "serif"],
+              sans: ['"Plus Jakarta Sans"', "sans-serif"],
+              mono: ['"Fira Code"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #122324;
+        color: #e2e8f0;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .editorial-border {
+        border-color: rgba(84, 87, 72, 0.35);
+      }
+
+      .editorial-card {
+        background: rgba(47, 58, 50, 0.4);
+        border: 1px solid rgba(84, 87, 72, 0.35);
+        transition:
+          border-color 0.25s ease,
+          background-color 0.25s ease;
+      }
+
+      .editorial-card:hover {
+        border-color: rgba(219, 159, 117, 0.45);
+        background: rgba(47, 58, 50, 0.65);
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #122324;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #2f3a32;
+        border-radius: 3px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #545748;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-palette-gold selection:text-palette-bg">
+    <div id="root"></div>
+    <script type="module" src="main.jsx"></script>
+  </body>
+</html>
